@@ -1,0 +1,12 @@
+<p>flight-lookahead works!</p>
+
+<form [formGroup]="formGroup">
+  <label>From</label>
+  <input type="text" formControlName="from" />
+</form>
+
+<div>{{ loading }}</div>
+
+<ng-container *ngFor="let flight of flights">
+  <div>{{ flight | json }}</div>
+</ng-container>
